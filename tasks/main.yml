@@ -1,2 +1,17 @@
 ---
-# tasks file for mysql
+
+- name: configure backup
+  ansible.builtin.template:
+    src: backup-mysql.jinja2
+    dest: /etc/oxiscripts/jobs/backup-mysql.sh
+    owner: root
+    group: root
+    mode: 0740
+
+- name: enable mysql-backup
+  ansible.builtin.file:
+    src: /etc/oxiscripts/jobs/backup-mysql.sh
+    dest: /etc/cron.daily/backup-mysql
+    owner: root
+    group: root
+    state: link
