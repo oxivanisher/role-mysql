@@ -1,2 +1,4 @@
 ---
 # defaults file for mysql
+mysql_backup_user:
+mysql_backup_password:

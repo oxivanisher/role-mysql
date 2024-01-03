@@ -6,12 +6,15 @@ This role configures mysql backup (and only the backup!) with help of [oxiscript
 Requirements
 ------------
 
-See the oxiscripts commant above.
+See the oxiscripts comment above.
 
 Role Variables
 --------------
 
-None.
+| Name                  | Comment                                | Default value |
+|-----------------------|----------------------------------------|---------------|
+| mysql_backup_user     | The user used for the mysql backup     | ``            |
+| mysql_backup_password | The password used for the mysql backup | ``            |
 
 Example Playbook
 ----------------

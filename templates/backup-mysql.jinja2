@@ -2,6 +2,7 @@
 . /etc/oxiscripts/backup.sh
 
 #This job exports and backups the mysql database
-/usr/bin/mysqldump --user={{ mysql.backup.user }}  --events --password={{ mysql.backup.password }} --opt --all-databases > /tmp/mysql-backup.sql
+/usr/bin/mysqldump --user={{ mysql_backup_user }} --events --password={{ mysql_backup_password }} --opt --all-databases
+> /tmp/mysql-backup.sql
 backup /tmp/mysql-backup.sql mysql
 rm /tmp/mysql-backup.sql
