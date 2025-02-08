@@ -1,5 +1,6 @@
 mysql
 =========
+[![Ansible Lint](https://github.com/oxivanisher/role-mysql/actions/workflows/ansible-lint.yml/badge.svg)](https://github.com/oxivanisher/role-mysql/actions/workflows/ansible-lint.yml)
 
 This role configures mysql backup (and only the backup!) with help of [oxiscripts](https://github.com/oxivanisher/oxiscripts). You can use [role-oxiscripts](https://github.com/oxivanisher/role-oxiscripts) to install and setup the oxiscripts.
 
